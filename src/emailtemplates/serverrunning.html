@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Server is running</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* CSS for layout */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(29, 29, 29);
+        /* background-image: url("https://res.cloudinary.com/mrrobotdev/image/upload/v1695057466/bg_theme_b77xvp.png"); */
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        padding-left: 250px;
+        padding-right: 250px;
+        position: relative;
+        padding-top: 100px;
+
+        /* padding: 6rem; */
+      }
+      .background-image {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1; /* Place it behind other content */
+      }
+
+      /* Style the image within the background container */
+      .background-image img {
+        object-fit: cover; /* Cover the entire container */
+        width: 100%;
+        height: 100%;
+      }
+
+      .text {
+        flex: 1;
+        padding: 20px;
+        font-family: Montserrat;
+      }
+
+      .image {
+        flex: 1;
+        text-align: center;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+      @media screen and (max-width: 1600px) {
+        .container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          padding-left: 150px;
+          padding-right: 150px;
+          /* padding: 6rem; */
+        }
+      }
+      @media screen and (max-width: 1000px) {
+        .container {
+          display: flex;
+          flex-direction: column-reverse;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          padding-left: 150px;
+          padding-right: 150px;
+          /* padding: 6rem; */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="background-image">
+      <img
+        src="https://res.cloudinary.com/mrrobotdev/image/upload/v1695061328/bg_1_sufdkx.png"
+        crossorigin="anonymous"
+        alt="Background Image"
+      />
+    </div> -->
+    <div class="container">
+      <div class="text" style="color: white; font-size: 22px">
+        <p style="font-weight: 300; line-height: 45px; text-align: center;">
+          Your gateway to a seamless online experience is live! Trust in our reliable server for secure and swift connections. Welcome to a world of smooth digital journeys!
+        </p>
+      </div>
+      <div class="image">
+        <img
+          src="https://res.cloudinary.com/mrrobotdev/image/upload/v1705491584/Group_1707478988_mztrrp.png"
+          crossorigin="anonymous"
+          alt="Image Description"
+          style="width: 600px; height: 600px"
+        />
+      </div>
+    </div>
+  </body>
+</html>

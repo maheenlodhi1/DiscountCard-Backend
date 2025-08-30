@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      .body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #161616;
+        color: #fff;
+      }
+      .container {
+        font-family: Montserrat, Arial, Helvetica, sans-serif;
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .hero {
+        padding: 40px;
+        background-color: #000000;
+        text-align: center;
+        border-radius: 20px;
+      }
+
+      .main-paragraph {
+        margin-top: 20px;
+        line-height: 1.6;
+      }
+      .footer {
+        background-color: #7b2630;
+        text-align: center;
+        padding: 20px;
+      }
+      .footer h3 {
+        margin: 0;
+        padding: 0;
+        color: #fff;
+      }
+      .social-icons {
+        margin-top: 10px;
+      }
+      .social-icons a {
+        display: inline-block;
+        margin: 0 5px;
+        text-decoration: none;
+      }
+      .footer p,
+      .footer a {
+        color: #fff;
+        font-size: 12px;
+        text-decoration: none;
+      }
+      .map-pin {
+        margin-right: 5px;
+      }
+      .abc {
+        font-size: 20px;
+      }
+
+      .subscription-link-button {
+        padding: 0.8rem 1.5rem;
+        background-color: #d32a3d;
+        color: #fff;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        box-shadow: none;
+        font-weight: 500;
+        border: none;
+        display: inline;
+        margin: 0 auto;
+        margin-bottom: 0rem;
+        display: block;
+        width: fit-content;
+        font-family: Montserrat, Arial, Helvetica, sans-serif;
+      }
+      @media (max-width: 600px) {
+        .logoImg img {
+          width: 60px;
+          width: 60px;
+        }
+        .main-paragraph {
+          text-align: left;
+          font-size: 13px;
+        }
+        .heroImg img {
+          width: 150px;
+          height: 150px;
+        }
+        .social-icons img {
+          width: 30px;
+          height: 30px;
+        }
+        .map-pin {
+          width: 18px;
+          height: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body class="body">
+    <table
+      class="container"
+      align="center"
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      width="100%"
+    >
+      <tr>
+        <td>
+          <table
+            class="hero"
+            align="left"
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            width="100%"
+            style="padding: 10; border-radius: 20"
+          >
+            <tr>
+              <td class="logoImg" style="padding-right: 20px">
+                <img
+                  src="https://res.cloudinary.com/arslanvirk/image/upload/v1685789829/logo_z4sjlx.png"
+                  alt="Logo"
+                  width="80"
+                  height="80"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class="abc" style="color: #fff">
+                  Signup Invitation: To create account on Mr.RobotDev
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: left">
+                <p>Hy,</p>
+                <p>
+                  I hope this email finds you well. I'm reaching out to invite
+                  you to join our website as a member of our community. We
+                  believe that your expertise and insights will greatly
+                  contribute to the discussions and activities on our platform.
+                </p>
+                <p>To create your account, please follow these simple steps:</p>
+                <ul>
+                  <li>Click on below "Sign Up" button.</li>
+                  <li>
+                    Fill in the required information, including your name, email
+                    address, and a secure password.
+                  </li>
+                  <li>
+                    Once you've completed the registration process, you will be
+                    able to access all the features and benefits of our website.
+                  </li>
+                </ul>
+                <p>
+                  We are excited to have you on board and look forward to seeing
+                  you actively participate in our community. Should you have any
+                  questions or encounter any issues during the registration
+                  process, please don't hesitate to reach out to us at
+                  <a class="inline-link" href="#">no-reply@mrrobotdev.com</a>
+                </p>
+              </td>
+            </tr>
+
+            <tr>
+              <td align="center">
+                <table
+                  role="presentation"
+                  cellspacing="0"
+                  cellpadding="0"
+                  border="0"
+                  style="background-color: #d32a3d; border-radius: 5px"
+                >
+                  <tr>
+                    <td style="padding: 10px 20px">
+                      <a
+                        href="{{verificationLink}}"
+                        style="
+                          color: #ffffff;
+                          text-decoration: none;
+                          font-weight: bold;
+                          font-family: Arial, sans-serif;
+                          font-size: 14px;
+                          display: inline-block;
+                        "
+                      >
+                        Sign Up
+                      </a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+    </table>
+    <table
+      class="footer"
+      align="center"
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      width="100%"
+    >
+      <tr>
+        <td>
+          <h3>Let's Stay Connected</h3>
+          <p>Follow us on Social Media</p>
+          <div class="social-icons">
+            <a href="#"
+              ><img
+                src="https://res.cloudinary.com/arslanvirk/image/upload/v1685990729/Vector_pmqpu9.png"
+                alt="Facebook"
+                width="25"
+                height="25"
+            /></a>
+            <!-- <a href="#"
+              ><img
+                src="https://res.cloudinary.com/arslanvirk/image/upload/v1685990863/Vector_1_rwtizh.png"
+                alt="LinkedIn"
+                width="25"
+                height="25"
+            /></a> -->
+          </div>
+          <hr />
+          <p>&copy; 2023, Mr.RobotDev PTY LTD, All Rights Reserved</p>
+          <p>
+            <a href="#">Help Center</a> | <a href="#">Terms & Conditions</a> |
+            <a href="{{unsubscribeLink}}">Unsubscribe </a>
+          </p>
+          <p>
+            <img
+              src="https://res.cloudinary.com/arslanvirk/image/upload/v1685991089/Vector_2_kf9e6z.png"
+              alt="Map Pin"
+              class="map-pin"
+              width="13"
+              height="15"
+              style="margin-right: 3"
+            />
+            Midrand, South Africa
+          </p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

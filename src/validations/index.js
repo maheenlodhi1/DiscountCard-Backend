@@ -1,0 +1,15 @@
+module.exports.authValidation = require("./auth.validation");
+module.exports.PartnerValidations = require("./partner.validation");
+module.exports.contactValidations = require("./contact.validation");
+module.exports.driverValidations = require("./promotion.validation");
+module.exports.adminValidations = require("./adminUser.validation");
+module.exports.paymentValidation = require("./payment.validation");
+module.exports.CustomerValidations = require("./customer.validation");
+module.exports.PromotionValidation = require("./promotion.validation");
+module.exports.CategoryValidation = require("./category.validation");
+module.exports.ReviewValidation = require("./review.validation");
+module.exports.SubscriptionTypeValidation = require("./subscriptionType.validation");
+module.exports.CouponValidation = require("./coupon.validation");
+module.exports.popupAdValidation = require("./popupAd.validation");
+module.exports.notificationValidation = require("./notifications.validation");
+module.exports.SubscriptionsValidation = require("./subscriptions.validation");

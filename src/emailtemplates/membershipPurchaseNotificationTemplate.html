@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style type="text/css">
+      .body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #2A9D72;
+        color: #fff;
+      }
+      .container {
+        font-family: Montserrat, Arial, Helvetica, sans-serif;
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .hero {
+        padding: 40px;
+        background-color: #fff;
+        text-align: center;
+        border-radius: 20px;
+      }
+
+      .main-paragraph {
+        margin-top: 20px;
+        line-height: 1.6;
+      }
+      .footer {
+        background-color: #333333;
+        text-align: center;
+        padding: 20px;
+      }
+      .footer h3 {
+        margin: 0;
+        padding: 0;
+        color: #fff;
+      }
+      .social-icons {
+        margin-top: 10px;
+      }
+      .social-icons a {
+        display: inline-block;
+        margin: 0 5px;
+        text-decoration: none;
+      }
+      .footer p,
+      .footer a {
+        color: #fff;
+        font-size: 12px;
+        text-decoration: none;
+      }
+      .map-pin {
+        margin-right: 5px;
+      }
+      .abc {
+        font-size: 20px;
+      }
+
+      .subscription-link-button {
+        padding: 0.8rem 1.5rem;
+        background-color: #d32a3d;
+        color: #fff;
+        border-radius: 0.5rem;
+        text-decoration: none;
+        box-shadow: none;
+        font-weight: 500;
+        border: none;
+        display: inline;
+        margin: 0 auto;
+        margin-bottom: 0rem;
+        display: block;
+        width: fit-content;
+        font-family: Montserrat, Arial, Helvetica, sans-serif;
+      }
+      @media (max-width: 600px) {
+        .logoImg img {
+          width: 160px;
+          height: 160px;
+        }
+        .main-paragraph {
+          text-align: left;
+          font-size: 13px;
+        }
+        .heroImg img {
+          width: 150px;
+          height: 60px;
+        }
+        .social-icons img {
+          width: 30px;
+          height: 30px;
+        }
+        .map-pin {
+          width: 18px;
+          height: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body class="body">
+    <table
+      class="container"
+      align="center"
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      width="100%"
+    >
+      <tr>
+        <td>
+          <table
+            class="hero"
+            align="left"
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            width="100%"
+            style="padding: 10; border-radius: 20"
+          >
+            <tr>
+              <td class="logoImg" style="padding-right: 20px;">
+                <img
+                  src="https://scaleable.blob.core.windows.net/discountcard/kafu-logo.png"
+                  alt="Logo"
+                  width="300"
+                  height="200"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p class="abc" style="color:black">
+                <b>Subject: Congratulations on Your Membership Card Purchase!</b>
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: left">
+                <p style="margin: 1rem 0; color: black;">Dear,</p>
+                <p style="margin: 1rem 0; color: black;">Congratulations on becoming a valued member of DiscountCard! We are thrilled to have you on board. Your purchase of the DiscountCard Membership Card has been successfully processed.</p>
+                <p style="margin: 1rem 0; color: black;">Below is a summary of your invoice:</p>
+                <p style="margin: 1rem 0; color: black;"><b>
+                - Membership Card Type: {{membershipType}}<br>
+                - Amount Paid: {{amountPaid}} AED<br>
+                - Transaction ID: {{transactionId}}<br>
+                - Date of Purchase: {{purchaseDate}}</b></p>
+                <p style="color: black;">Thank you for choosing DiscountCard. Should you have any questions or need further assistance, please don't hesitate to contact us at <a href="mailto:{{supportEmail}}">{{supportEmail}}</a> .</p>
+                <p style="margin: 1rem 0; color: black;">Warm Regards</p>
+                <p style="margin: 1rem 0; color: black;">The DiscountCard Team</p>
+
+
+              </td>
+            </tr>
+
+            <tr>
+              <td align="center">
+                <table
+                  role="presentation"
+                  cellspacing="0"
+                  cellpadding="0"
+                  border="0"
+                  style="background-color: #d32a3d; border-radius: 5px"
+                ></table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+      </tr>
+    </table>
+    <table
+      class="footer"
+      align="center"
+      border="0"
+      cellpadding="0"
+      cellspacing="0"
+      width="100%"
+    >
+      <tr>
+        <td>
+          <!-- <h3>Let's Stay Connected</h3>
+          <p>Follow us on Social Media</p>
+          <div class="social-icons">
+            <a href="https://twitter.com/kafucard"
+              ><img
+                src="https://res.cloudinary.com/kafucard/image/upload/v1711496861/twitter_cjahar.png"
+                alt="Twitter"
+            /></a>
+             <a href="https://www.linkedin.com/company/kafucard"
+              ><img
+                src="https://res.cloudinary.com/kafucard/image/upload/v1711496861/linkedIn_iynhzt.png"
+                alt="LinkedIn"
+                width="25"
+                height="25"
+            /></a> <a href="https://www.facebook.com/kafucard"
+              ><img
+                src="https://res.cloudinary.com/kafucard/image/upload/v1711496860/facebook_lut0wd.png"
+                alt="Facebook"
+                width="25"
+                height="25"
+            /></a> <a href="https://www.instagram.com/kafucard/"
+              ><img
+                src="https://res.cloudinary.com/kafucard/image/upload/v1711496860/instagram_ho6jtu.png"
+                alt="insagram"
+                width="25"
+                height="25"
+            /></a> <a href="https://www.youtube.com/channel/UCKeQc6RlXLK1XVGjyi4xkWQ"
+              ><img
+                src="https://res.cloudinary.com/kafucard/image/upload/v1711496861/youtube_zfvyaz.png"
+                alt="youtube"
+                width="25"
+                height="25"
+            /></a> <a href="https://www.tiktok.com/@kafucard"
+              ><img
+                src="https://res.cloudinary.com/kafucard/image/upload/v1711501072/Vector_1_gtzyrw.png"
+                alt="Tiktok"
+                width="25"
+                height="25"
+            /></a> 
+          </div> -->
+          <hr />
+          <p>&copy; 2025, DiscountCard , All Rights Reserved</p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
