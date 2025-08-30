@@ -30,7 +30,6 @@
     "firebase-admin": "^13.0.2",
     "geoip-country": "^4.2.18",
     "geoip-lite": "^1.4.7",
-    "graphicsmagick": "^0.0.1",
     "helmet": "^6.0.1",
     "http-status": "^1.6.2",
     "jimp": "^0.22.10",
