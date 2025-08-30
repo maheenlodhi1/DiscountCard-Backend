@@ -26,7 +26,7 @@ const getTransactions = catchAsync(async (req, res) => {
     }
     const options = pick(req.query, ["sortBy", "limit", "page"]);
     Object.assign(options, {
-      populate: "promotionId-locale locations,partner-firstName",
+      populate: "promotionId-locale locations,customer-firstName lastName",
     });
     if (customerId) {
       filter.customer = customerId;
